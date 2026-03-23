@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Moda y Accesorios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/a7/4c/4da74c30-21ac-94ac-a776-2920b505b5b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">STYLEHUB</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">HOMBRE</a></li>
+                <li><a href="mujeres.html">MUJER</a></li>
+                <li><a href="ninos.html">NIÑOS</a></li>
+                <li><a href="deportes.html">DEPORTES</a></li>
+                <li><a href="ropa-accesorios.html">ROPA Y ACCESORIOS</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </nav>
+
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Sección 1: Hero con Video -->
+    <section class="hero">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="video/portada2.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="video-overlay">
+                <h2>COLECCIÓN PRIMAVERA 2025</h2>
+                <p>Descubre las últimas tendencias en moda y accesorios</p>
+                <button class="cta-button">COMPRAR AHORA</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Carruseles de Productos -->
+        
+    <section class="products-section">
+        <h2 class="section-title">DESTACADOS</h2>
+        </section>
+        
+        <!-- Carrusel 1: Zapatillas -->
+            <section class="carousel-section">
+        <h3 class="carousel-title">ZAPATILLAS</h3>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel1">
+                <button class="carousel-button prev" onclick="moveCarousel(-1, 'carousel1')">&#10094;</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/02cd9a97ce874d89ba17ae2b003ebe50_9366/Zapatillas_adidas_Grand_Court_Lifestyle_para_Tenis_con_Cordones_Blanco_GW6511_01_standard.jpg" alt="Zapatilla 1">
+                        <h4>Zapatillas adidas Grand Court Lifestyle</h4>
+                        <p>$189.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://oechsle.vtexassets.com/arquivos/ids/18277837/2667797.jpg?v=638551745659770000" alt="Zapatilla 2">
+                        <h4>Running Adidas</h4>
+                        <p>$199.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://runastore.pe/media/catalog/product/cache/1ad426beaceeac5935cd76675f3d6a1f/i/d/id3022_1.jpg" alt="Zapatilla 3">
+                        <h4>Adidas Grand Court Base 2.0</h4>
+                        <p>$126.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://conterspe.vtexassets.com/arquivos/ids/194105-800-auto?v=638631873760700000&width=800&height=auto&aspect=true" alt="Zapatilla 4">
+                        <h4>Adidas De Hombre Running</h4>
+                        <p>$194.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/4a46e180c40643c8b436af9c017a4615_9366/Zapatillas_Samba_adidas_Originals_Verde_ID2054_01_standard.jpg" alt="Zapatilla 5">
+                        <h4>Samba adidas Originals</h4>
+                        <p>$429.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/e7439ea283884b6083b56de9f4a35e5e_9366/Zapatillas_Response_Runner_Plomo_IH6102_01_00_standard.jpg" alt="Zapatilla 6">
+                        <h4>Response Runner</h4>
+                        <p>$189.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://triathlonperu.vtexassets.com/arquivos/ids/357877-800-800?v=638453601255030000&width=800&height=800&aspect=true" alt="Zapatilla 7">
+                        <h4>Adidas Courtblock</h4>
+                        <p>$229.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://conterspe.vtexassets.com/arquivos/ids/194513-800-auto?v=638662012521100000&width=800&height=auto&aspect=true" alt="Zapatilla 8">
+                        <h4>Urbanas ADIDAS Blanco / Verde</h4>
+                        <p>$249.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_771547-MEC78999768469_092024-E.webp" alt="Zapatilla 9">
+                        <h4>Botines Urbanos Adidas</h4>
+                        <p>$309.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.stockx.com/images/Reebok-Pump-Omni-Zone-II-Anuel-AA-The-Sky-Above-The-Street-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1738193358" alt="Zapatilla 10">
+                        <h4>Bomba Reebok Omni Zone II Anuel AA</h4>
+                        <p>$560.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://i0.wp.com/goldenstoreperu.com/wp-content/uploads/2023/07/t-2.png?fit=1024%2C1024&ssl=1" alt="Zapatilla 11">
+                        <h4>NIKE AIR MAX DAWN BLACK</h4>
+                        <p>$329.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://i5.walmartimages.com/asr/e9e54948-56bf-4845-a30a-9d8df0b2459a.d41c1cc2d10a32ccb3ddcabb7a457794.jpeg" alt="Zapatilla 12">
+                        <h4>Nike Air Force 1 '07 White/Black</h4>
+                        <p>$399.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://media.falabella.com/falabellaPE/139842611_01/w=800,h=800,fit=pad" alt="Zapatilla 13">
+                        <h4>Zapatillas Nike Air Force 1</h4>
+                        <p>$273.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://runastore.pe/media/catalog/product/cache/1ad426beaceeac5935cd76675f3d6a1f/c/d/cd5432-003_1.jpg" alt="Zapatilla 14">
+                        <h4>Nike Wmns Air Max Excee</h4>
+                        <p>$253.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://rimage.ripley.com.pe/home.ripley/Attachment/WOP/1/2025334821068/full_image-2025334821068.jpg" alt="Zapatilla 15">
+                        <h4>Nike White Air Max Excee</h4>
+                        <p>$299.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://media.foot-store.es/catalog/product/cache/image/1800x/9df78eab33525d08d6e5fb8d27136e95/n/i/nike_cw4555-019_cool-grey-phantom-anthracite-white_7.jpg" alt="Zapatilla 16">
+                        <h4>Nike Air Max SC</h4>
+                        <p>$159.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://i5.walmartimages.com/seo/Puma-Men-s-Roma-Basic-Sneaker_9b6dbed8-cf41-4116-b29e-4a0b3ba2ec93_1.b0bd73755d18e0bc9ac878bf4b6a13d8.jpeg" alt="Zapatilla 17">
+                        <h4>PUMA Mens Roma Basic</h4>
+                        <p>$296.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://coppelar.vtexassets.com/arquivos/ids/2249550/1R9305460F20250224082238.png?v=638786115114900000" alt="Zapatilla 18">
+                        <h4>Puma Caven 2.0 Blanco/Verde</h4>
+                        <p>$119.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://conterspe.vtexassets.com/arquivos/ids/192398-800-auto?v=638518286846400000&width=800&height=auto&aspect=true" alt="Zapatilla 19">
+                        <h4>Urbano Unisex Puma</h4>
+                        <p>$159.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://tenissportmx.com/cdn/shop/files/D_622267-MLM79857235319_102024-B.jpg?v=1746043602&width=480" alt="Zapatilla 20">
+                        <h4>Puma Club Ii Jr Negro</h4>
+                        <p>$1756.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://www.converse.com.pe/media/catalog/product/z/a/zapatillas-mujer-converse-ct-as-lift-hi-560846c-0_1_prmxv3k3sprezdme.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="Zapatilla 21">
+                        <h4>Taylor All Star Lift</h4>
+                        <p>$287.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://www.converse.com.pe/media/catalog/product/z/a/zapatillas-mujer-converse-ct-as-lift-hi-560845c-0_1_76mot8pqizkang35.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="Zapatilla 22">
+                        <h4>Taylor All Star Lift</h4>
+                        <p>$287.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://oechsle.vtexassets.com/arquivos/ids/14039374/94711.jpg?v=638138089905900000" alt="Zapatilla 23">
+                        <h4>Taylor All Star Lift Red</h4>
+                        <p>$242.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://www.lapolar.cl/dw/image/v2/BCPP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw271ba23d/images/large/569787-burgundy.jpg?sw=800&sh=800&sm=fit" alt="Zapatilla 24">
+                        <h4>LEVIS-marrón Woodward</h4>
+                        <p>$74.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://streetwearstoreperu.pe/wp-content/uploads/2024/10/B0D9176TSTBLU-1.jpg" alt="Zapatilla 25">
+                        <h4>JALLYA TOMMY HILFIGER</h4>
+                        <p>$395.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://oechsle.vteximg.com.br/arquivos/ids/18368254-1000-1000/imageUrl_2.jpg?v=638566078267300000" alt="Zapatilla 26">
+                        <h4>Tommy Hilfiger Modelo Fantim</h4>
+                        <p>$259.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.stockx.com/images/adidas-Gazelle-Indoor-Bad-Bunny-Lionel-Messi-La-Voz-De-Los-Fans-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1738193358" alt="Zapatilla 27">
+                        <h4>Adidas x Bad Bunny x Lionel Messi</h4>
+                        <p>$267.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://snkrdunk.s3.ap-northeast-1.amazonaws.com/en/magazine/wp-content/uploads/2024/08/05153949/1-9.webp" alt="Zapatilla 28">
+                        <h4>Bad Bunny x Lionel Messi x adidas</h4>
+                        <p>$267.00</p>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveCarousel(1, 'carousel1')">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+        <!-- Carrusel 2: Casacas -->
+            <section class="carousel-section">
+        <h3 class="carousel-title">CASACAS</h3>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel2">
+                <button class="carousel-button prev" onclick="moveCarousel(-1, 'carousel2')">&#10094;</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="https://oechsle.vteximg.com.br/arquivos/ids/12373630/imageUrl_1.jpg?v=638037285175700000" alt="Casaca 1">
+                        <h4>Polera Hombre Yansus Beige</h4>
+                        <p>$72.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://oechsle.vteximg.com.br/arquivos/ids/12373760/imageUrl_1.jpg?v=638037286264470000" alt="Casaca 2">
+                        <h4>Polera Hombre Yansus Blanco</h4>
+                        <p>$72.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://media.falabella.com/falabellaPE/120322849_01/w=800,h=800,fit=pad" alt="Casaca 3">
+                        <h4>Polera Hombre Yansus Celeste</h4>
+                        <p>$72.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://oechsle.vteximg.com.br/arquivos/ids/12372376/imageUrl_1.jpg?v=638037281304870000" alt="Casaca 4">
+                        <h4>Polera Hombre Yansus Verde</h4>
+                        <p>$72.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://www.projectpieta.com/wp-content/uploads/2022/02/polera_negra_peruano.jpg" alt="Casaca 5">
+                        <h4>Polera Negro</h4>
+                        <p>$129.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://yansus.com/cdn/shop/files/polerarosadaconrosa1.png?v=1691703614" alt="Casaca 6">
+                        <h4>Polera Hombre Yansus Rosa</h4>
+                        <p>$75.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/22792791-418-418/imageUrl_1.jpg" alt="Casaca 7">
+                        <h4>Hombre Yansus Bicolor Azul</h4>
+                        <p>$72.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://www.outletsil.com/wp-content/uploads/2022/10/DQ5775-010-2.png" alt="Casaca 8">
+                        <h4>NIKE Polera Outdoor Club</h4>
+                        <p>$259.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://home.ripley.com.pe/Attachment/WOP_5/2020254617869/2020254617869_2.jpg" alt="Casaca 9">
+                        <h4>Polera Deportiva Nike Celeste</h4>
+                        <p>$169.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_ce2277d1-96e7-46fe-9023-f24af7bca7ab_540x.jpg?=75&v=1694782953" alt="Casaca 10">
+                        <h4>Nike Club Fleece Printing White</h4>
+                        <p>$269.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,e_sharpen:95,w_2000,h_2000/global/586690/01/fnd/PER/fmt/png/Polera-con-capucha-Essentials-para-hombre" alt="Casaca 11">
+                        <h4>Polera Puma Negro</h4>
+                        <p>$179.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://home.ripley.com.pe/Attachment/WOP_5/2020319828384/2020319828384-5.jpg" alt="Casaca 12">
+                        <h4>Polera Puma Amarillo</h4>
+                        <p>$179.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://home.ripley.com.pe/Attachment/WOP_5/2020318554178/2020318554178_2.jpg" alt="Casaca 13">
+                        <h4>Polera Puma Azul</h4>
+                        <p>$179.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.2025052317264550349/1500x1500/6830D601EBD5C-Polera-Deportiva-Hombre-Ess-No--1-Logo-Hoodie-Fl.webp" alt="Casaca 14">
+                        <h4>Polera Puma Plomo</h4>
+                        <p>$179.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cd7b2543bf04435fa53dafce011e4335_9366/Polera_Adicolor_Classics_3_Tiras_Negro_IM2087_01_laydown.jpg" alt="Casaca 15">
+                        <h4>Adicolor Classics 3 Tiras</h4>
+                        <p>$259.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5d322b08642f4db69a75ad120148fae6_9366/Polera_con_Capucha_Adicolor_Classics_Trifolio_Plomo_H06669_01_laydown.jpg" alt="Casaca 16">
+                        <h4>Adicolor Classics Trifolio</h4>
+                        <p>$174.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/6afca5f99991482ca1fcaf0201375bcc_9366/Polera_Essentials_Logo_Grande_Algodon_Rosado_IC6119_01_laydown.jpg" alt="Casaca 17">
+                        <h4>Essentials Logo Grande Algodón</h4>
+                        <p>$129.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://xtremepeoplestore.com/cdn/shop/files/8_55b2dc76-3a63-4588-bb80-c303e17b1204.jpg?v=1703204900" alt="Casaca 18">
+                        <h4>LEVIS T3 GRAPHIC CREW</h4>
+                        <p>$142.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://tommyperu.vtexassets.com/arquivos/ids/896798/DM0DM20503_PJ4_1.jpg?v=638820808902200000" alt="Casaca 19">
+                        <h4>SWEATER TJM SLIM ESSNTLS</h4>
+                        <p>$184.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://media.falabella.com/falabellaPE/19694185_1/public" alt="Casaca 20">
+                        <h4>SWEATER TJM SLIM ESSNTLS</h4>
+                        <p>$194.00</p>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveCarousel(1, 'carousel2')">&#10095;</button>
+            </div>
+        </div>
+        </section>
+        <!-- Carrusel 3: Accesorios -->
+    <section class="carousel-section">
+        <h2 class="carousel-title">ACCESORIOS</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel3">
+                <button class="carousel-button prev" onclick="moveCarousel(-1, 'carousel3')">&#10094;</button>
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="https://media.falabella.com/falabellaPE/17389207_1/w=1500,h=1500,fit=pad" alt="Gorra 1">
+                        <h4>MLB New York Yankees</h4>
+                        <p>$229.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDCH7ZR0S6LF/1500x1500/658F54FA6605A-Gorro-Deportivo-Unisex-Adulto-Bballcap-Lt-Emb.webp" alt="Reloj 1">
+                        <h4>Gorra Deportivo - Blanco Adidas</h4>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://oechsle.vteximg.com.br/arquivos/ids/20125362-800-800/2776286.jpg?v=638688738913900000" alt="Mochila 1">
+                        <h4>Gorra Deportivo - Negro Adidas</h4>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://img01.ztat.net/article/spp-media-p1/117c72bc271a3dc6af642c956e38e8fa/aed20d899dba4b07bd3eb7d5725e12c2.jpg?imwidth=762&filter=packshot" alt="Bufanda 1">
+                        <h4>MLB New York Yankees</h4>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwf29ffda0/images/hi-res/196606810850_1_20240129120000-mrtPeru.jpg" alt="Gafas 1">
+                        <h4>Gorra - Blanco Nike</h4>
+                        <p>$89.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/7f741ee400734272aa6c91263c9aca65_9366/Gorra_de_Beisbol_New_Logo_Rojo_JP0396_01_00_standard.jpg" alt="Gafas 2">
+                        <h4>Gorra de Béisbol - Rojo Adidas</h4>
+                        <p>$97.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dwa9a98c67/images/hi-res/197601484909_1_20250217120000-mrtPeru.jpg" alt="Gafas 3">
+                        <h4>Gorra Alianza Lima - Nike Perú</h4>
+                        <p>$99.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://oechsle.vteximg.com.br/arquivos/ids/19039642-1000-1000/image-3d133f00dde64212b4f7cdd23ee95619.jpg?v=638652645385000000" alt="Gafas 4">
+                        <h4>Gorra Brand Los Angeles - Azul</h4>
+                        <p>$119.00</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://m.media-amazon.com/images/I/51Q8WGm-1hL._UY1000_.jpg" alt="Gafas 5">
+                        <h4>Nike Black</h4>
+                        <p>$89.00</p>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveCarousel(1, 'carousel3')">&#10095;</button>
+            </div>
+        </div>
+        </section>
+        <!-- Carrusel de Marcas -->
+            <section class="products-section">
+        <h2 class="section-title">NUESTRAS MARCAS</h2>
+        <div class="brands-carousel">
+            <div class="brands-track">
+                <div class="brand-slide"><img src="https://cdn.freebiesupply.com/logos/large/2x/nike-4-logo-black-and-white.png" alt="Nike"></div>
+                <div class="brand-slide"><img src="https://cdn.freebiesupply.com/logos/large/2x/adidas-logo.png" alt="Adidas"></div>
+                <div class="brand-slide"><img src="https://1000logos.net/wp-content/uploads/2017/05/PUMA-Logo-1978-1980.png" alt="Puma"></div>
+                <div class="brand-slide"><img src="https://e7.pngegg.com/pngimages/256/226/png-clipart-logo-new-balance-brand-shoe-trademark-new-balance-logo.png" alt="New Balance"></div>
+                <div class="brand-slide"><img src="https://brandlogos.net/wp-content/uploads/2021/11/converse-logo.png" alt="Converse"></div>
+                <div class="brand-slide"><img src="https://www.pngplay.com/wp-content/uploads/9/Levis-Logo-Download-Free-PNG.png" alt="Levi's"></div>
+                <div class="brand-slide"><img src="https://e7.pngegg.com/pngimages/765/1018/png-clipart-tommy-hilfiger-discounts-and-allowances-fashion-coupon-calvin-klein-others-blue-angle.png" alt="Tommy Hilfiger"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Fullscreen Carrusel -->
+    <section class="fullscreen-carousel">
+        <div class="fs-carousel-container">
+            <div class="fs-carousel-track">
+                <div class="fs-slide active">
+                    <img src="https://sneakernews.com/wp-content/uploads/2022/08/anuel-aa-reebok-the-sky-above-the-street.jpg" alt="Moda 1">
+                    <div class="fs-slide-content">
+                        <h3>NUEVA COLECCIÓN</h3>
+                        <p>Descubre los looks más frescos para esta temporada</p>
+                        <button class="fs-cta">VER COLECCIÓN</button>
+                    </div>
+                </div>
+                <div class="fs-slide">
+                    <img src="https://moxlondon.com/wp-content/uploads/2023/07/5.jpg" alt="Moda 2">
+                    <div class="fs-slide-content">
+                        <h3>OFERTAS ESPECIALES</h3>
+                        <p>Hasta 50% de descuento en seleccionados</p>
+                        <button class="fs-cta">COMPRAR AHORA</button>
+                    </div>
+                </div>
+                <div class="fs-slide">
+                    <img src="https://content.deadstock.de/media/pages/uploads/2024/01/2e7e6ae6b3-1731408489/bad-bunny-x-lionel-messi-x-adidas-f50-bright-cyan-10-2560x.webp" alt="Moda 3">
+                    <div class="fs-slide-content">
+                        <h3>ACCESORIOS EXCLUSIVOS</h3>
+                        <p>Complementa tu estilo con nuestras piezas únicas</p>
+                        <button class="fs-cta">EXPLORAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fs-carousel-nav">
+                <span class="fs-dot active" onclick="goToFsSlide(0)"></span>
+                <span class="fs-dot" onclick="goToFsSlide(1)"></span>
+                <span class="fs-dot" onclick="goToFsSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Video Footer -->
+    <section class="video-footer">
+        <video autoplay muted loop>
+            <source src="video/portada3.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="privacy-policy">
+            <p>© 2025 StyleHub. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+        </div>
+    </section>
+
+    <div class="cart-overlay">
+    <div class="cart-container">
+        <div class="cart-header">
+            <h3>TU CARRITO</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-content">
+            <!-- Los productos del carrito se agregarán aquí dinámicamente -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <h4>TOTAL: <span>$0.00</span></h4>
+            </div>
+            <button class="checkout-btn">COMPRAR AHORA</button>
+        </div>
+    </div>
+</div>
+
+            <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/51987654321?text=Hola,%20quiero%20información%20sobre%20sus%20zapatillas%20para%20niños" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+        <!-- Widget de WhatsApp -->
+<div class="whatsapp-widget">
+    <div class="whatsapp-chat-container hidden">
+        <div class="whatsapp-chat-header">
+            <div class="chat-title">
+                <i class="fab fa-whatsapp"></i>
+                <h4>StyleHub - Soporte</h4>
+                <button class="close-chat">&times;</button>
+            </div>
+            <div class="chat-subtitle">
+                <p>Selecciona una opción de contacto</p>
+            </div>
+        </div>
+        
+        <div class="whatsapp-chat-body">
+            <div class="chat-options">
+                <div class="chat-option bot-option">
+                    <i class="fas fa-robot"></i>
+                    <h5>Asistente Automático</h5>
+                    <p>Resuelve consultas rápidas 24/7</p>
+                    <button class="select-option" data-option="bot">Seleccionar</button>
+                </div>
+                
+                <div class="chat-option human-option">
+                    <i class="fas fa-user-headset"></i>
+                    <h5>Atención Humana</h5>
+                    <p>Agente disponible 9am - 6pm</p>
+                    <button class="select-option" data-option="human">Seleccionar</button>
+                </div>
+            </div>
+            
+            <div class="chat-messages hidden">
+                <div class="messages-container"></div>
+                <div class="chat-input">
+                <input type="text" placeholder="Escribe tu mensaje..." class="message-input">
+                <button class="send-button"><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <!-- Mensajes aparecerán aquí -->
+            </div>
+        </div>
+    </div>
+    
+    <button class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+</div>
+
+    <!-- Chatbot Widget -->
+<div class="chatbot-widget">
+    <!-- Cabecera del chat -->
+    <div class="chatbot-header hidden">
+        <div class="chatbot-title">
+            <i class="fab fa-whatsapp"></i>
+            <h4>StyleHub - Asistente Virtual</h4>
+            <button class="close-chatbot">&times;</button>
+        </div>
+        <div class="chatbot-subtitle">
+            <p>Respuestas en menos de 1 minuto</p>
+        </div>
+    </div>
+
+    <!-- Cuerpo del chat -->
+    <div class="chatbot-body hidden">
+        <div class="chat-messages">
+            <!-- Mensajes aparecerán aquí -->
+        </div>
+        <div class="quick-replies">
+            <!-- Opciones rápidas -->
+            <button class="quick-reply" data-reply="Quiero información sobre zapatillas">Zapatillas</button>
+            <button class="quick-reply" data-reply="Quiero saber precios">Precios</button>
+            <button class="quick-reply" data-reply="Necesito ayuda con mi pedido">Seguimiento de pedido</button>
+        </div>
+    </div>
+
+    <!-- Botón flotante -->
+    <button class="chatbot-button">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

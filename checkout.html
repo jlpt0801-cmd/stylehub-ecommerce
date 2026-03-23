@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - StyleHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/a7/4c/4da74c30-21ac-94ac-a776-2920b505b5b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="checkout-container">
+        <div class="checkout-header">
+            <h1>FINALIZAR COMPRA</h1>
+            <div class="checkout-steps">
+                <div class="step active">1. Información</div>
+                <div class="step">2. Pago</div>
+                <div class="step">3. Confirmación</div>
+            </div>
+        </div>
+        
+        <div class="checkout-content">
+            <div class="checkout-form">
+                <h2>Información de Contacto</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    
+                    <h2>Dirección de Envío</h2>
+                    <div class="form-group">
+                        <label for="address">Dirección</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">Ciudad</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Código Postal</label>
+                            <input type="text" id="zip" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">País</label>
+                        <select id="country" required>
+                            <option value="">Seleccionar país</option>
+                            <option value="PE">Perú</option>
+                            <option value="MX">México</option>
+                            <option value="CO">Colombia</option>
+                            <option value="AR">Argentina</option>
+                            <option value="CL">Chile</option>
+                            <option value="ES">España</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notas adicionales (opcional)</label>
+                        <textarea id="notes" rows="3"></textarea>
+                    </div>
+                </form>
+                
+                <h2>Método de Pago</h2>
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+                        <label for="credit-card">
+                            <i class="far fa-credit-card"></i>
+                            <span>Tarjeta de Crédito/Débito</span>
+                        </label>
+                        <div class="payment-details" id="credit-card-details">
+                            <div class="form-group">
+                                <label for="card-number">Número de tarjeta</label>
+                                <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="card-expiry">Fecha de expiración</label>
+                                    <input type="text" id="card-expiry" placeholder="MM/AA">
+                                </div>
+                                <div class="form-group">
+                                    <label for="card-cvc">CVC</label>
+                                    <input type="text" id="card-cvc" placeholder="123">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="card-name">Nombre en la tarjeta</label>
+                                <input type="text" id="card-name">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-method">
+    <input type="radio" id="visa" name="payment" value="visa">
+    <label for="visa">
+        <i class="fab fa-cc-visa"></i>
+        <span>Visa</span>
+    </label>
+    <div class="payment-details" id="visa-details">
+        <div class="form-group">
+            <label for="visa-card-number">Número de tarjeta Visa</label>
+            <input type="text" id="visa-card-number" placeholder="1234 5678 9012 3456" pattern="\d{16}" required>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="visa-card-expiry">Fecha de expiración</label>
+                <input type="text" id="visa-card-expiry" placeholder="MM/AA" pattern="\d{2}/\d{2}" required>
+            </div>
+            <div class="form-group">
+                <label for="visa-card-cvc">CVC</label>
+                <input type="text" id="visa-card-cvc" placeholder="123" pattern="\d{3}" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="visa-card-name">Nombre en la tarjeta</label>
+            <input type="text" id="visa-card-name" required>
+        </div>
+    </div>
+</div>
+                    
+                    <div class="payment-method">
+                        <input type="radio" id="yape" name="payment" value="yape">
+                        <label for="yape">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Yape</span>
+                        </label>
+                        <div class="payment-details" id="yape-details">
+                            <p>Escanea el código QR para completar tu pago</p>
+                            <div class="qr-code">
+                                <img src="images/yape/qr2.jpeg" alt="QR Yape">
+                            </div>
+                            <p>O envía el pago a nuestro número: 999 888 777</p>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <input type="radio" id="plin" name="payment" value="plin">
+                        <label for="plin">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Plin</span>
+                        </label>
+                        <div class="payment-details" id="plin-details">
+                            <p>Escanea el código QR para completar tu pago</p>
+                            <div class="qr-code">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://stylehub.com/pay/plin/order123" alt="QR Plin">
+                            </div>
+                            <p>O envía el pago a nuestro número: 999 888 777</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="checkout-actions">
+                    <button class="back-to-cart">Volver al carrito</button>
+                    <button class="place-order" id="place-order">Realizar pedido</button>
+                </div>
+            </div>
+            
+            <div class="order-summary">
+                <h2>Resumen del Pedido</h2>
+                <div class="order-items" id="order-items">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </div>
+                <div class="order-totals">
+                    <div class="order-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="order-row">
+                        <span>Envío</span>
+                        <span id="shipping">$0.00</span>
+                    </div>
+                    <div class="order-row total">
+                        <span>Total</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de confirmación -->
+    <div class="confirmation-modal" id="confirmation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>¡Pedido Confirmado!</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="confirmation-details">
+                    <p>Gracias por tu compra en <strong>StyleHub</strong>. Tu pedido ha sido procesado exitosamente.</p>
+                    <p><strong>Número de pedido:</strong> #STYLE-<span id="order-number">123456</span></p>
+                    <p><strong>Fecha de entrega estimada:</strong> <span id="delivery-date">15 de Julio, 2024</span></p>
+                    <p>Te hemos enviado un correo electrónico con los detalles de tu pedido.</p>
+                </div>
+                <div class="invoice">
+                    <h3>Factura</h3>
+                    <div class="invoice-items" id="invoice-items">
+                        <!-- Los productos de la factura se cargarán aquí -->
+                    </div>
+                    <div class="invoice-totals">
+                        <div class="invoice-row">
+                            <span>Subtotal:</span>
+                            <span id="invoice-subtotal">$0.00</span>
+                        </div>
+                        <div class="invoice-row">
+                            <span>Envío:</span>
+                            <span id="invoice-shipping">$0.00</span>
+                        </div>
+                        <div class="invoice-row total">
+                            <span>Total:</span>
+                            <span id="invoice-total">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+    <button class="continue-shopping">Continuar comprando</button>
+    <button class="print-invoice">Imprimir Factura</button>
+</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="firebase-config.js"></script>
+<script src="checkout.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

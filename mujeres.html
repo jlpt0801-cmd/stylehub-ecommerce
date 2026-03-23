@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujeres - StyleHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mujeres.css">
+    <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/a7/4c/4da74c30-21ac-94ac-a776-2920b505b5b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/256x256bb.jpg">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">STYLEHUB</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">HOMBRE</a></li>
+                <li><a href="#" class="active">MUJER</a></li>
+                <li><a href="ninos.html">NIÑOS</a></li>
+                <li><a href="deportes.html">DEPORTES</a></li>
+                <li><a href="ropa-accesorios.html">ROPA Y ACCESORIOS</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar productos...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </nav>
+
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="women-hero">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="video/portada5.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="video-overlay">
+                <h2>COLECCIÓN MUJER 2025</h2>
+                <p>Descubre las últimas tendencias en moda femenina</p>
+                <button class="cta-button" id="ver-coleccion-btn">VER COLECCIÓN</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel de Zapatillas -->
+    <section class="women-carousel-section" id="zapatillas-mujer">
+        <h2 class="section-title">ZAPATILLAS PARA MUJER</h2>
+        
+        <div class="carousel-container">
+            <div class="carousel" id="zapatillas-mujer-carousel">
+                <button class="carousel-button prev">&#10094;</button>
+                <div class="carousel-track">
+                    <!-- Producto 1 -->
+                    <div class="carousel-slide">
+                        <img src="https://www.ultralon.com.pe/cdn/shop/files/UL1008W-3_1_494b872c-8947-452a-8f3a-89e669152649.jpg?v=1752351685" alt="Zapatillas Mujer">
+                        <h4>Outdoor Ultra Spin Racer</h4>
+                        <p>$150.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="carousel-slide">
+                        <img src="https://thn.pe/cdn/shop/files/MR530SGC_1.jpg?v=1719952002" alt="Zapatillas Mujer">
+                        <h4>Urbano Mujer New Balance 530</h4>
+                        <p>$419.90</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="carousel-slide">
+                        <img src="https://mercury.vtexassets.com/arquivos/ids/20800713/image-53400b4346dc41ca89a4cd4d7471c808.jpg?v=638827544244130000" alt="Zapatillas Mujer">
+                        <h4>Zapatilla Casual JAN-2423 Blanco</h4>
+                        <p>$84.95</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    
+                    <!-- Producto 4 -->
+                    <div class="carousel-slide">
+                        <img src="https://d3fvqmu2193zmz.cloudfront.net/items_2/uid_commerces.1/uid_items_2.FDLWQFIC1TNP/1500x1500/66C4A0BBBEBBD-Zapatilla-Casual-Mujer-Dare-1494.webp" alt="Zapatillas Mujer">
+                        <h4>North Star Casual Dare 1494</h4>
+                        <p>$85.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    
+                    <!-- Producto 5 -->
+                    <div class="carousel-slide">
+                        <img src="https://www.ultralon.com.pe/cdn/shop/files/UL23572W-2_1_15083eb3-6017-4cd1-90a0-66a69acd711f.jpg?v=1752351652" alt="Zapatillas Mujer">
+                        <h4>Running Ultra Maze</h4>
+                        <p>$150.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="carousel-slide">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/2113a73e9746458f8612d97cf16fdd69_9366/Zapatillas_Urban_Court_Blanco_IF4092_01_standard.jpg" alt="Zapatillas Mujer">
+                        <h4>Urban Court - Blanco adidas</h4>
+                        <p>$150.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <!-- Producto 7 -->
+                    <div class="carousel-slide">
+                        <img src="https://thn.pe/cdn/shop/files/FD4329-001_1.jpg?v=1732569285" alt="Zapatillas Mujer">
+                        <h4>Nike Urbanas Air Max Intrlk Lite</h4>
+                        <p>$314.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <!-- Producto 8 -->
+                    <div class="carousel-slide">
+                        <img src="https://runastore.pe/media/catalog/product/cache/1ad426beaceeac5935cd76675f3d6a1f/f/v/fv6343-500_1_1.jpg" alt="Zapatillas Mujer">
+                        <h4>Nike W Promina Correr</h4>
+                        <p>$219.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <!-- Producto 9 -->
+                    <div class="carousel-slide">
+                        <img src="https://thn.pe/cdn/shop/files/HF3053-103_1.jpg?v=1732569407" alt="Zapatillas Mujer">
+                        <h4>Urbano Nike Air Max Portal</h4>
+                        <p>$499.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <!-- Producto 10 -->
+                    <div class="carousel-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrMK9zx8VH5_UzxCJgIgCNicLUFXWa10Q9g&s" alt="Zapatillas Mujer">
+                        <h4>Nike Wmns Nike Air Max Ap</h4>
+                        <p>$499.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel de Ropa -->
+    <section class="women-carousel-section" id="ropa-mujer">
+        <h2 class="section-title">ROPA PARA MUJER</h2>
+        
+        <div class="carousel-container">
+            <div class="carousel" id="ropa-mujer-carousel">
+                <button class="carousel-button prev">&#10094;</button>
+                <div class="carousel-track">
+                    <!-- Producto 1 -->
+                    <div class="carousel-slide">
+                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/28869440-418-418/20373424.jpg" alt="Ropa Mujer">
+                        <h4>Polera con Capucha Básica</h4>
+                        <p>$39.90</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="carousel-slide">
+                        <img src="https://plazavea.vteximg.com.br/arquivos/ids/28869454-450-450/20373426.jpg?v=638461390380600000" alt="Ropa Mujer">
+                        <h4>Polera con Capucha Básica</h4>
+                        <p>$39.90</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="carousel-slide">
+                        <img src="https://realplaza.vtexassets.com/arquivos/ids/34446769/image-de593b500ddf4f6aadab1aaa4556b46e.jpg?v=638332419518170000" alt="Ropa Mujer">
+                        <h4>Polera con Capucha Básica</h4>
+                        <p>$39.90</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    
+                    <!-- Producto 4 -->
+                    <div class="carousel-slide">
+                        <img src="https://tiendanebula.net/cdn/shop/products/a2e47f60a8df6f98e7db677fbb14d6a0.jpg?v=1629407723" alt="Ropa Mujer">
+                        <h4>Polera Mujer</h4>
+                        <p>$84.95</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    
+                    <!-- Producto 5 -->
+                    <div class="carousel-slide">
+                        <img src="https://tiendanebula.net/cdn/shop/products/86a2780514e3d3cd79c1feea30b7392a.jpg?v=1658857578" alt="Ropa Mujer">
+                        <h4>Polera Mujer-Corazón</h4>
+                        <p>$84.95</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="carousel-slide">
+                        <img src="https://home.ripley.com.pe/Attachment/WOP_5/2020266991483/2020266991483_2.jpg" alt="Ropa Mujer">
+                        <h4>POLERA DEPORTIVA PUMA NEGRO</h4>
+                        <p>$90.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <!-- Producto 7 -->
+                    <div class="carousel-slide">
+                        <img src="https://oechsle.vteximg.com.br/arquivos/ids/20955023-800-800/2861307_0.jpg?v=638798293110770000" alt="Ropa Mujer">
+                        <h4>Polera Mujer</h4>
+                        <p>$90.00</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+
+                    <!-- Producto 8 -->
+                    <div class="carousel-slide">
+                        <img src="https://realplaza.vtexassets.com/arquivos/ids/165929-800-auto?v=637297378461400000&width=800&height=auto&aspect=true" alt="Ropa Mujer">
+                        <h4>Polera Mujer-White</h4>
+                        <p>$84.95</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Accesorios -->
+    <section class="women-accessories" id="accesorios-mujer">
+        <div class="accessories-container">
+            <div class="accessories-content">
+                <h2>ACCESORIOS EXCLUSIVOS</h2>
+                <p>Complementa tu estilo con nuestra selección de accesorios para mujer</p>
+                <button class="accessories-btn" id="ver-accesorios-btn">VER ACCESORIOS</button>
+            </div>
+            <div class="accessories-image">
+                <img src="https://oechsle.vteximg.com.br/arquivos/ids/16315669-1000-1000/2426045.jpg" alt="Accesorios Mujer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito -->
+    <div class="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h3>TU CARRITO</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-content">
+                <!-- Los productos del carrito se agregarán aquí dinámicamente -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <h4>TOTAL: <span>$0.00</span></h4>
+                </div>
+                <button class="checkout-btn">COMPRAR AHORA</button>
+            </div>
+        </div>
+    </div>
+
+                <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/51987654321?text=Hola,%20quiero%20información%20sobre%20sus%20zapatillas%20para%20niños" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+        <!-- Widget de WhatsApp -->
+<div class="whatsapp-widget">
+    <div class="whatsapp-chat-container hidden">
+        <div class="whatsapp-chat-header">
+            <div class="chat-title">
+                <i class="fab fa-whatsapp"></i>
+                <h4>StyleHub - Soporte</h4>
+                <button class="close-chat">&times;</button>
+            </div>
+            <div class="chat-subtitle">
+                <p>Selecciona una opción de contacto</p>
+            </div>
+        </div>
+        
+        <div class="whatsapp-chat-body">
+            <div class="chat-options">
+                <div class="chat-option bot-option">
+                    <i class="fas fa-robot"></i>
+                    <h5>Asistente Automático</h5>
+                    <p>Resuelve consultas rápidas 24/7</p>
+                    <button class="select-option" data-option="bot">Seleccionar</button>
+                </div>
+                
+                <div class="chat-option human-option">
+                    <i class="fas fa-user-headset"></i>
+                    <h5>Atención Humana</h5>
+                    <p>Agente disponible 9am - 6pm</p>
+                    <button class="select-option" data-option="human">Seleccionar</button>
+                </div>
+            </div>
+            
+            <div class="chat-messages hidden">
+                <div class="messages-container"></div>
+                <div class="chat-input">
+                <input type="text" placeholder="Escribe tu mensaje..." class="message-input">
+                <button class="send-button"><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <!-- Mensajes aparecerán aquí -->
+            </div>
+        </div>
+    </div>
+    
+    <button class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+</div>
+
+    <!-- Chatbot Widget -->
+<div class="chatbot-widget">
+    <!-- Cabecera del chat -->
+    <div class="chatbot-header hidden">
+        <div class="chatbot-title">
+            <i class="fab fa-whatsapp"></i>
+            <h4>StyleHub - Asistente Virtual</h4>
+            <button class="close-chatbot">&times;</button>
+        </div>
+        <div class="chatbot-subtitle">
+            <p>Respuestas en menos de 1 minuto</p>
+        </div>
+    </div>
+
+    <!-- Cuerpo del chat -->
+    <div class="chatbot-body hidden">
+        <div class="chat-messages">
+            <!-- Mensajes aparecerán aquí -->
+        </div>
+        <div class="quick-replies">
+            <!-- Opciones rápidas -->
+            <button class="quick-reply" data-reply="Quiero información sobre zapatillas">Zapatillas</button>
+            <button class="quick-reply" data-reply="Quiero saber precios">Precios</button>
+            <button class="quick-reply" data-reply="Necesito ayuda con mi pedido">Seguimiento de pedido</button>
+        </div>
+    </div>
+
+    <!-- Botón flotante -->
+    <button class="chatbot-button">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+</div>
+
+    <script src="mujeres.js"></script>
+</body>
+</html>
